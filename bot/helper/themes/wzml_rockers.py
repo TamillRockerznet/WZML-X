@@ -164,10 +164,10 @@ class WZMLStyle:
     L_LOG_START = "➲ <b><u>Leech Started :</u></b>\n┃\n┠ <b>User :</b> {mention} ( #ID{uid} )\n┖ <b>Source :</b> <a href='{msg_link}'>Click Here</a>"
 
     # async def onUploadComplete(): ---> tasks_listener.py
-    NAME = "<b><i>{Name}</i></b>\n┃\n"
-    SIZE = "┠ <b>Size: </b>{Size}\n\n"
-    ELAPSE = "┠ <b>Elapsed: </b>{Time}\n\n"
-    MODE = "┠ <b>Mode: </b>{Mode}\n"
+    NAME = "<b><i>• {Name}</i></b>\n┃\n"
+    SIZE = "<b>• Size: </b>{Size}\n"
+    ELAPSED = "<b>• Elapsed: </b>{Time}\n"
+    MODE = "<b>• Mode: </b>{Mode}\n"
 
     # ----- LEECH -------
     L_TOTAL_FILES = "┠ <b>Total Files: </b>{Files}\n"
