@@ -304,6 +304,7 @@ def get_readable_message():
             msg += BotTheme("STA_MODE", Mode=download.upload_details["mode"])
 
 await context.reply(msg, quote=True)
+
             if hasattr(download, "seeders_num"):
                 try:
                     msg += BotTheme("SEEDERS", Seeders=download.seeders_num())
@@ -328,6 +329,7 @@ await context.reply(msg, quote=True)
         msg += BotTheme("ID", Id=download.message.from_user.id)
 
 await context.reply(msg, quote=True)
+
         if (download.eng()).startswith("qBit"):
             msg += BotTheme(
                 "BTSEL", Btsel=f"/{BotCommands.BtSelectCommand}_{download.gid()}"
