@@ -295,12 +295,15 @@ def get_readable_message():
                 "PROCESSED",
                 Processed=f"{download.processed_bytes()} of {download.size()}",
             )
+            msg = ""
             msg += BotTheme("STATUS", Status=download.status(), Url=msg_link)
             msg += BotTheme("ETA", Eta=download.eta())
             msg += BotTheme("SPEED", Speed=download.speed())
             msg += BotTheme("ELAPSED", Elapsed=get_readable_time(elapsed))
             msg += BotTheme("ENGINE", Engine=download.eng())
             msg += BotTheme("STA_MODE", Mode=download.upload_details["mode"])
+
+await context.reply(msg, quote=True)
             if hasattr(download, "seeders_num"):
                 try:
                     msg += BotTheme("SEEDERS", Seeders=download.seeders_num())
@@ -320,8 +323,11 @@ def get_readable_message():
             msg += BotTheme("STATUS_SIZE", Size=download.size())
             msg += BotTheme("NON_ENGINE", Engine=download.eng())
 
+        msg = ""
         msg += BotTheme("USER", User=download.message.from_user.mention(style="html"))
         msg += BotTheme("ID", Id=download.message.from_user.id)
+
+await context.reply(msg, quote=True)
         if (download.eng()).startswith("qBit"):
             msg += BotTheme(
                 "BTSEL", Btsel=f"/{BotCommands.BtSelectCommand}_{download.gid()}"
@@ -364,8 +370,11 @@ def get_readable_message():
             MirrorStatus.STATUS_SEEDING,
         ]:
             up_speed += speed_in_bytes_per_second
-
+            
+    msg = ""
     msg += BotTheme("FOOTER")
+
+await context.reply(msg, quote=True)
     buttons = ButtonMaker()
     buttons.ibutton(BotTheme("REFRESH", Page=f"{PAGE_NO}/{PAGES}"), "status ref")
     if tasks > STATUS_LIMIT:
