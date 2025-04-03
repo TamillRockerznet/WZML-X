@@ -305,12 +305,6 @@ def get_readable_message():
 
 await context.reply(msg, quote=True)
 
-            if hasattr(download, "seeders_num"):
-                try:
-                    msg += BotTheme("SEEDERS", Seeders=download.seeders_num())
-                    msg += BotTheme("LEECHERS", Leechers=download.leechers_num())
-                except Exception:
-                    pass
         elif download.status() == MirrorStatus.STATUS_SEEDING:
             msg += BotTheme("STATUS", Status=download.status(), Url=msg_link)
             msg += BotTheme("SEED_SIZE", Size=download.size())
