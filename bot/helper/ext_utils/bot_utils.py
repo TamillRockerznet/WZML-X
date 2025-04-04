@@ -254,7 +254,7 @@ class EngineStatus:
         self.STATUS_RCLONE = f"RClone {version_cache['rclone']}"
 
 
-def get_readable_message():
+def get_readable_message(original_message=None):
     msg = ""
     button = None
     STATUS_LIMIT = config_dict["STATUS_LIMIT"]
@@ -332,6 +332,9 @@ def get_readable_message():
 
     if len(msg) == 0:
         return None, None
+    
+    # If original_message is provided, return it for quoted reply
+    return msg, original_message if original_message else None
 
     dl_speed = 0
 
