@@ -6,6 +6,8 @@ class WZMLStyle:
     ST_BN1_URL = "https://www.github.com/TamillRockerznet/WZML-X"
     ST_BN2_NAME = "Updates"
     ST_BN2_URL = "https://t.me/TamillRockerznet"
+    ST_BN3_NAME = "Owner/Admin"
+    ST_BN3_URL = "https://t.me/ROLEXX_DAS"
     ST_MSG = """<i>This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram or to ddl servers.</i>\n\n
 <b>Type {help_command} to get a list of available commands</b>"""
     ST_BOTPM = """<i>Now, This bot will send all your files and links here. Start Using ...</i>"""
@@ -133,6 +135,7 @@ class WZMLStyle:
 
     # async def restart_notification(): ---> __main__.py
     RESTART_SUCCESS = """⌬ <b><i>Restarted Successfully!</i></b>
+ ╭━━━━❰ Info   
 ┠ <b>📅 Date:</b> {date}
 ┃ 
 ┠ <b>⏰ Time:</b> {time}
@@ -282,7 +285,7 @@ class WZMLStyle:
     # ---------------------
 
     # USER Setting --> user_setting.py
-    USER_SETTING = """㊂ <b><u>User Settings :</u></b>
+    USER_SETTING = """╭━━━━❰ ㊂ <b><u>User Settings :</u></b>
         
 ┎<b> Name :</b> {NAME} ( <code>{ID}</code> )
 ┃ 
@@ -295,7 +298,7 @@ class WZMLStyle:
 ➲ <u><b>Available Args:</b></u>
 • <b>-s</b> or <b>-set</b>: Set Directly via Arg"""
 
-    UNIVERSAL = """㊂ <b><u>Universal Settings : {NAME}</u></b>
+    UNIVERSAL = """╭━━━━❰ ㊂ <b><u>Universal Settings : {NAME}</u></b>
 
 ┎<b> YT-DLP Options :</b> <b><code>{YT}</code></b>
 ┠<b> Daily Tasks :</b> <code>{DT}</code> per day
@@ -305,7 +308,7 @@ class WZMLStyle:
 ┠<b> Save Mode :</b> <code>{SAVE_MODE}</code>
 ┖<b> User Bot PM :</b> <code>{BOT_PM}</code>"""
 
-    MIRROR = """㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
+    MIRROR = """╭━━━━❰ ㊂ <b><u>Mirror/Clone Settings : {NAME}</u></b>
 
 ┎<b> RClone Config :</b> <i>{RCLONE}</i>
 ┠<b> Mirror Prefix :</b> <code>{MPREFIX}</code>
@@ -316,7 +319,7 @@ class WZMLStyle:
 ┠<b> Total User TD(s) :</b> <i>{USERTD}</i>
 ┖<b> Daily Mirror :</b> <code>{DM}</code> per day"""
 
-    LEECH = """㊂ <b><u>Leech Settings for {NAME}</u></b>
+    LEECH = """╭━━━━❰ ㊂ <b><u>Leech Settings for {NAME}</u></b>
 
 ┎<b> Daily Leech : </b><code>{DL}</code> per day
 ┠<b> Leech Type :</b> <i>{LTYPE}</i>
