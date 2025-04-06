@@ -142,7 +142,8 @@ class WZMLStyle:
 ┃ 
 ┠ <b>🌐 TimeZone:</b> {timz}
 ┃ 
-┖ <b>🛠️ Version:</b> {version}"""
+┖ <b>🛠️ Version:</b> {version}
+╰━━━━━━━━━━━━━━━➣"""
     RESTARTED = """⌬ <b><i>Bot Restarted!</i></b>"""
     # ---------------------
 
@@ -208,15 +209,15 @@ class WZMLStyle:
 
     #####---------PROGRESSIVE STATUS-------
     BAR = "\n┃ {Bar}"
-    PROCESSED = "\n┠ <b>Processed:</b> {Processed}\n\n"
-    STATUS = '\n┠ <b>Status:</b> <a href="{Url}">{Status}</a>\n\n'
-    ETA = " | <b>ETA:</b> {Eta}\n\n"
-    SPEED = "\n┠ <b>Speed:</b> {Speed}\n\n"
-    ELAPSED = " | <b>Elapsed:</b> {Elapsed}\n\n"
-    ENGINE = "\n┠ <b>Engine:</b> {Engine}\n\n"
-    STA_MODE = "\n┠ <b>Mode:</b> {Mode}\n\n"
-    SEEDERS = "\n┠ <b>Seeders:</b> {Seeders} |\n\n"
-    LEECHERS = "<b>Leechers:</b> {Leechers}"
+    PROCESSED = "\n┠ <b>🔃 Processed :</b> {Processed}\n\n"
+    STATUS = '\n┠ <b>📊 Status:</b> <a href="{Url}">{Status}</a>\n\n'
+    ETA = " | <b>📎 ETA:</b> {Eta}\n\n"
+    SPEED = "\n┠ <b>⚡ Speed:</b> {Speed}\n\n"
+    ELAPSED = " | <b>⏲ Elapsed:</b> {Elapsed}\n\n"
+    ENGINE = "\n┠ <b>🛠 Engine:</b> {Engine}\n\n"
+    STA_MODE = "\n┠ <b>⚙ Mode:</b> {Mode}\n\n"
+    SEEDERS = "\n┠ <b>🌱 Seeders:</b> {Seeders} |\n\n"
+    LEECHERS = "<b>🍃 Leechers:</b> {Leechers}"
 
     ####--------SEEDING----------
     SEED_SIZE = "\n┠ <b>Size: </b>{Size}"
@@ -231,21 +232,21 @@ class WZMLStyle:
     NON_ENGINE = "\n┠ <b>Engine:</b> {Engine}"
 
     ####--------OVERALL MSG FOOTER----------
-    USER = "\n┠ <b>User:</b> <code>{User}</code> | "
-    ID = "<b>ID:</b> <code>{Id}</code>"
-    BTSEL = "\n┠ <b>Select:</b> {Btsel}"
-    CANCEL = "\n┖ {Cancel}\n\n"
+    USER = "\n┠ <b>👦 User:</b> <code>{User}</code> | "
+    ID = "<b>🔐 ID:</b> <code>{Id}</code>"
+    BTSEL = "\n┠ <b>⚙ Select:</b> {Btsel}"
+    CANCEL = "\n┖❌ {Cancel}\n\n"
 
     ####------FOOTER--------
     FOOTER = "⌬ <b><i>Bot Stats</i></b>\n\n"
-    TASKS = "┠ <b>Tasks:</b> {Tasks}\n\n"
-    BOT_TASKS = "┠ <b>Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n\n"
-    Cpu = "┠ <b>CPU:</b> {cpu}% | \n\n"
+    TASKS = "┠ <b>🔧 Tasks:</b> {Tasks}\n\n"
+    BOT_TASKS = "┠ <b>🔧 Tasks:</b> {Tasks}/{Ttask} | <b>AVL:</b> {Free}\n\n"
+    Cpu = "┠ <b>💻 CPU:</b> {cpu}% | \n\n"
     FREE = "<b>F:</b> {free} [{free_p}%]\n\n"
-    Ram = "\n┠ <b>RAM:</b> {ram}% | \n\n"
-    uptime = "<b>UPTIME:</b> {uptime}\n\n"
-    DL = "\n┖ <b>DL:</b> {DL}/s | \n\n"
-    UL = "<b>UL:</b> {UL}/s\n\n"
+    Ram = "\n┠ <b>💿 RAM:</b> {ram}% | \n\n"
+    uptime = "<b> UPTIME:</b> {uptime}\n\n"
+    DL = "\n┖ <b>📥 DL:</b> {DL}/s | \n\n"
+    UL = "<b>📤 UL:</b> {UL}/s\n\n"
 
     ###--------BUTTONS-------
     PREVIOUS = "⫷"
@@ -291,7 +292,7 @@ class WZMLStyle:
 ┣⪼<b> Username :</b> {USERNAME}
 ┣⪼<b> Telegram DC :</b> {DC}
 ┣⪼<b> Language :</b> {LANG}
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━━➣
+╰━━━━━━━━━━━━━━━➣
 
 ➲ <u><b>Available Args:</b></u>
 • <b>-s</b> or <b>-set</b>: Set Directly via Arg"""
@@ -305,7 +306,7 @@ class WZMLStyle:
 ┣⪼<b> MediaInfo Mode :</b> <code>{MEDIAINFO}</code>
 ┣⪼<b> Save Mode :</b> <code>{SAVE_MODE}</code>
 ┣⪼<b> User Bot PM :</b> <code>{BOT_PM}</code>
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━━➣"""
+╰━━━━━━━━━━━━━━━➣"""
 
     MIRROR = """╭━━━━❰ ㊂ <b><u>Mirror/Clone Settings : {NAME}  ❱━➣</u></b>
 
@@ -317,7 +318,7 @@ class WZMLStyle:
 ┣⪼<b> User TD Mode :</b> <i>{TMODE}</i>
 ┣⪼<b> Total User TD(s) :</b> <i>{USERTD}</i>
 ┣⪼<b> Daily Mirror :</b> <code>{DM}</code> per day
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━━➣"""
+╰━━━━━━━━━━━━━━━➣"""
 
     LEECH = """╭━━━━❰ ㊂ <b><u>Leech Settings for {NAME}  ❱━➣</u></b>
 
@@ -333,5 +334,5 @@ class WZMLStyle:
 ┣⪼<b> Leech Dumps :</b> <code>{LDUMP}</code>
 ┣⪼<b> Leech Remname :</b> <code>{LREMNAME}</code>
 ┣⪼<b> Leech Metadata :</b> <code>{LMETA}</code>
-╰━━━━━━━━━━━━━━━━━━━━━━━━━━━➣"""
+╰━━━━━━━━━━━━━━━➣"""
     
