@@ -208,15 +208,15 @@ class WZMLStyle:
     STATUS_NAME = "<b><i>{Name}</i></b>"
 
     #####---------PROGRESSIVE STATUS-------
-    BAR = "\n┃ {Bar}"
-    PROCESSED = "\n┠ <b>🔃 Processed :</b> {Processed}\n\n"
-    STATUS = '\n┠ <b>📊 Status:</b> <a href="{Url}">{Status}</a>\n\n'
-    ETA = " | <b>📎 ETA:</b> {Eta}\n\n"
-    SPEED = "\n┠ <b>⚡ Speed:</b> {Speed}\n\n"
-    ELAPSED = " | <b>⏲ Elapsed:</b> {Elapsed}\n\n"
-    ENGINE = "\n┠ <b>🛠 Engine:</b> {Engine}\n\n"
-    STA_MODE = "\n┠ <b>⚙ Mode:</b> {Mode}\n\n"
-    SEEDERS = "\n┠ <b>🌱 Seeders:</b> {Seeders} |\n\n"
+    BAR = "\n {Bar} ❱━➣"
+    PROCESSED = "\n┣⪼ <b>🔃 Processed :</b> {Processed}\n"
+    STATUS = '\n┣⪼ <b>📊 Status:</b> <a href="{Url}">{Status}</a>\n'
+    ETA = " ┣⪼ <b>📎 ETA:</b> {Eta}\n"
+    SPEED = "\n┣⪼ <b>⚡ Speed:</b> {Speed}\n"
+    ELAPSED = " ┣⪼ <b>⏲ Elapsed:</b> {Elapsed}\n"
+    ENGINE = "\n┣⪼ <b>🛠 Engine:</b> {Engine}\n"
+    STA_MODE = "\n┣⪼ <b>⚙ Mode:</b> {Mode}\n"
+    SEEDERS = "\n┠ <b>🌱 Seeders:</b> {Seeders} |\n"
     LEECHERS = "<b>🍃 Leechers:</b> {Leechers}"
 
     ####--------SEEDING----------
@@ -232,10 +232,10 @@ class WZMLStyle:
     NON_ENGINE = "\n┠ <b>Engine:</b> {Engine}"
 
     ####--------OVERALL MSG FOOTER----------
-    USER = "\n┠ <b>👦 User:</b> <code>{User}</code> | "
+    USER = "\n┣⪼ <b>👦 User:</b> <code>{User}</code> | "
     ID = "<b>🔐 ID:</b> <code>{Id}</code>"
-    BTSEL = "\n┠ <b>⚙ Select:</b> {Btsel}"
-    CANCEL = "\n┖❌ {Cancel}\n\n"
+    BTSEL = "\n┣⪼ <b>⚙ Select:</b> {Btsel}"
+    CANCEL = "\n╰━━━━❰ ❌ {Cancel} ❱━➣\n\n"
 
     ####------FOOTER--------
     FOOTER = "⌬ <b><i>Bot Stats</i></b>\n\n"
