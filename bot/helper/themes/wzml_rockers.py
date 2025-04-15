@@ -49,7 +49,7 @@ class WZMLStyle:
     BOT_STATS = """⌬ <b><i>BOT STATISTICS :</i></b>
 ┖ <b>Bot Uptime :</b> {bot_uptime}
 
-┎ <b><i>RAM ( MEMORY ) :</i></b>
+┎ <b><i>💻RAM ( MEMORY ) :</i></b>
 ┃ {ram_bar} {ram}%
 ┖ <b>U :</b> {ram_u} | <b>F :</b> {ram_f} | <b>T :</b> {ram_t}
 
